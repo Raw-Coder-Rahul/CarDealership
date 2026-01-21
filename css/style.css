@@ -132,6 +132,10 @@ html {
     gap: 2rem;
 }
 
+nav .navbar ul li {
+    padding: 2.5rem 0.5ren;
+}
+
 nav .navbar .navLink {
     display: flex;
     align-items: center;
@@ -171,6 +175,11 @@ nav .others .addBtn {
     transition: 0.7s;
 }
 
+nav .others .addBtn:hover {
+    background: var(--text-color);
+    color: #fff;
+}
+
 nav .others .addBtn i,
 nav .others .addBtn i:hover {
     color: #fff;
@@ -179,4 +188,171 @@ nav .others .addBtn i:hover {
 
 #menuBtn {
     font-size: 3.5rem;
+}
+
+nav .navbar ul li:hover,
+nav .others i:hover {
+    color: var(--main-color);
+}
+
+nav .navbar ul li a:hover,
+nav .navbar ul li a.active {
+    color: var(--main-color);
+}
+
+nav .navbar ul li .drop-down {
+    position: absolute;
+    top: 2.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: justify;
+    width: 180px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(190, 190, 190, 0.5);
+    padding: 1rem 0 0;
+    display: none;
+}
+
+nav .navbar ul li:hover .drop-down {
+    display: flex;
+}
+
+nav .navbar ul li .drop-down li{
+    border-bottom: 1px solid rgba(190, 190, 190, 0.5);
+    padding-bottom: 1rem;
+    padding-top: 0.5rem;
+    padding-left: 1rem;
+    z-index: 100;
+    overflow: hidden;
+}
+
+nav .navbar ul li .drop-down li a {
+    font-size: 1.5rem;
+    transition: 0.4s ease;
+}
+
+nav .navbar ul li .drop-down li:hover a {
+    font-size: 1.6rem;
+    padding-left: 0.5rem;
+}
+
+.drop-down li .drop-down-two,
+.drop-down li .drop-down-three,
+.drop-down li .drop-down-four,
+.drop-down li .drop-down-five,
+.drop-down li .drop-down-six {
+    width: 180px;
+    position: absolute;
+    left: 180px;
+    margin-top: -3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: justify;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(190, 190, 190, 0.5);
+    padding: 1rem 0 0;
+    z-index: 111;
+    overflow: hidden;
+    display: none;
+}
+
+.drop-down li:hover .drop-down-two,
+.drop-down li:hover .drop-down-three,
+.drop-down li:hover .drop-down-four,
+.drop-down li:hover .drop-down-five,
+.drop-down li:hover .drop-down-six {
+    display: flex;
+}
+
+.drop-down li .chev {
+    position: absolute;
+    left: 150px;
+    top: 5px;
+    color: var(--text-color);
+}
+
+.drop-down li:hover .chev {
+    color: var(--main-color);
+}
+
+/* media query */
+@media(max-width:1370px) {
+    nav .navbar ul li {
+        padding: 2.5rem 0;
+    }
+
+    nav .others {
+        gap: 1rem;
+    }
+
+    nav .navbar .navLink {
+        gap: 0.5rem;
+    }
+}
+
+@media(max-width:1190px) {
+    nav .others .addBtn {
+        display: none;
+    }
+}
+
+@media(max-width:991px) {
+    nav .navbar .navLink {
+        position: absolute;
+        display: block;
+        text-align: center;
+        top: 9rem;
+        width: 100%;
+        left: 0;
+        background: #fff;
+        box-shadow: 0 0 5px rgba(190, 190, 190, 0.5)
+        0 0 10px rgba(190, 190, 190, 0.5);
+        padding-left: 30px;
+        transition: 0.5s ease-in-out;
+        display: none;
+    }
+
+    nav .navbar .navLink.active {
+        display: block;
+    }
+    .header.sticky {
+        padding: 0.6rem 9.5%;
+    }
+
+    nav .navbar ul li {
+        padding: 1rem 0;
+    }
+
+    nav .navbar ul li .drop-down {
+        position: sticky;
+        display: none;
+    }
+
+    .drop-down li:hover .drop-down-two,
+    .drop-down li:hover .drop-down-three,
+    .drop-down li:hover .drop-down-four,
+    .drop-down li:hover .drop-down-five,
+    .drop-down li:hover .drop-down-six {
+        position: sticky;
+        margin-top: 0rem;
+        display: none;
+    }
+
+    nav .others i.cart {
+        display: none;
+    }
+}
+
+@media(max-width:420px) {
+    .header .logo img{
+        width: 120px;
+    }
+
+    nav .navbar .navLink {
+        top: 4.6rem;
+    }
 }

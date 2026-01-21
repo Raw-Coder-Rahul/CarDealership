@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
     <link href="https://cdn.boxicons.com/3.0.8/fonts/basic/boxicons.min.css" rel="stylesheet">
+    
+    <!-- swiper css link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
 </head>
 <body>
     <!-- top-header -->
@@ -42,23 +45,115 @@
         <nav>
             <div class="navbar">
                     <ul class="navLink">
-                        <li><a href="#">Home</a></li>
+                        <li><a href="#" class="active">Home</a></li>
                         <li><a href="#">About</a></li>
-                        <li><a href="#">Inventory</a></li>
-                        <li><a href="#">Pages</a></li>
-                        <li><a href="#">Shop</a></li>
-                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Inventory<i class='bx  bx-chevron-down'></i> </a>
+                            <ul class="drop-down">
+                                <li><a href="#">Inventory Grid</a></li>
+                                <li><a href="#">Inventory List</a></li>
+                                <li><a href="#">Inventory Single</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Pages<i class='bx  bx-chevron-down'></i> </a>
+                            <ul class="drop-down">
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Car Listing<i class='bx  bx-chevron-down chev'></i> </a>
+                                    <ul class="drop-down-two">
+                                        <li><a href="#">Listing Grid</a></li>
+                                        <li><a href="#">Listing List</a></li>
+                                        <li><a href="#">Listing Single</a></li>
+                                        <li><a href="#">Compare</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Account</a></li>
+                                <li><a href="#">My Account<i class='bx  bx-chevron-down chev'></i> </a>
+                                    <ul class="drop-down-three">
+                                        <li><a href="#">Dashboard</a></li>
+                                        <li><a href="#">My Profile</a></li>
+                                        <li><a href="#">My Listing</a></li>
+                                        <li><a href="#">Add Listing</a></li>
+                                        <li><a href="#">My Favourites</a></li>
+                                        <li><a href="#">Message</a></li>
+                                        <li><a href="#">Setting</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Authentication<i class='bx  bx-chevron-down chev'></i> </a>
+                                    <ul class="drop-down-four">
+                                        <li><a href="#">Login</a></li>
+                                        <li><a href="#">Register</a></li>
+                                        <li><a href="#">Forgot Password</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Services<i class='bx  bx-chevron-down chev'></i> </a>
+                                    <ul class="drop-down-five">
+                                        <li><a href="#">Services</a></li>
+                                        <li><a href="#">Services Single</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Dealer<i class='bx  bx-chevron-down chev'></i> </a>
+                                    <ul class="drop-down-six">
+                                        <li><a href="#">Dealer</a></li>
+                                        <li><a href="#">Dealer Single</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Extra Pages</a></li>
+                                <li><a href="#">Our Team</a></li>
+                                <li><a href="#">Pricing Plan</a></li>
+                                <li><a href="#">Calculator</a></li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Testimonials</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Shop<i class='bx  bx-chevron-down'></i> </a>
+                            <ul class="drop-down">
+                                <li><a href="#">Shop</a></li>
+                                <li><a href="#">Shop Casting</a></li>
+                                <li><a href="#">Shop Checkout</a></li>
+                                <li><a href="#">Shop Single</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Blog<i class='bx  bx-chevron-down'></i> </a>
+                            <ul class="drop-down">
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Blog Single</a></li>
+                            </ul>
+                        </li>
                         <li><a href="#">Contact Us</a></li>
                     </ul>
             </div>
             <div class="others">
                 <i class='bx  bx-search'></i> 
-                <i class="fa-solid fa-cart-arrow-down"></i>
+                <i class="fa-solid fa-cart-arrow-down cart"></i>
                <div class="addBtn"><i class='bx  bx-plus-circle'></i> Add Listing</div>
                 <i class='bx  bx-menu-left' id="menuBtn"></i> 
             </div>
         </nav>
      </header>
+
+     <!-- home section start -->
+    <div class="home">
+        <div class="swiper myHome">
+            <div class="swiper-wrapper">
+            <div class="swiper-slide slide slide-one">
+                <h4>Welcome to RS</h4>
+                <h1>best way to find <br> your <span>dream</span> car</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui blanditiis, incidunt mollitia delectus deleniti doloribus!</p>
+            
+                <div class="button">
+                    <button type="submit" class="about"><i class='bx  bx-arrow-right-stroke'></i> About More</button>
+                    <button type="submit" class="learn"><i class='bx  bx-arrow-right-stroke'></i> Learn More</button>
+                </div>
+            </div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+
+    <!-- swiper js link -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
 </html>
