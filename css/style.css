@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 
 * {
     margin: 0;
@@ -542,3 +544,262 @@ nav .navbar ul li .drop-down li:hover a {
 }
 
 /* perfect section start */
+.search {
+    position: relative;
+    padding: 0 16rem;
+    background: #f7f2f2;
+}
+
+.search .find {
+    max-width: 1200px;
+    width: 100%;
+    padding: 2.5rem;
+    position: absolute;
+    top: -7rem;
+    z-index: 111;
+    background: #fff;
+    box-shadow: 0 0 5px rgba(190, 190, 190, 0.5),
+    0 0 10px rgba(190, 190, 190, 0.5);
+    overflow: hidden;
+}
+
+.find .find-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    gap: 3rem;
+}
+
+.find h3 {
+    font-size: 2.7rem;
+    letter-spacing: 1px;
+    padding-bottom: 2rem;
+    font-weight: 500;
+    color: var(--text-color);
+    font-family: "Poppins", sans-serif;
+}
+
+.find .find-row h4 {
+    font-size: 1.7rem;
+    color: var(--text-color);
+    padding-bottom: 1.5rem;
+}
+
+.find .find-row select {
+    border: 1px solid #646161;
+    font-size: 1.5rem;
+    width: 200px;
+    font-weight: 500;
+    height: 45px;
+    padding: 0 1rem;
+    color: #646161;
+    font-family: "Poppins", sans-serif;
+}
+
+.find .find-row select option {
+    padding: 0.5rem;
+    border-bottom: 1px solid #646161;
+}
+
+.search .search-btn button {
+    background: var(--main-color);
+    margin-top: 4rem;
+    padding: 1.3rem 2rem;
+    border-radius: 0.5rem;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.search .search-btn button i {
+    padding-right: 0.5rem;
+}
+
+.search .search-btn button:hover {
+    background: var(--text-color);
+}
+
+/* market section start */
+section {
+    padding: 2.5rem 16rem;
+    background: #f7f2f2;
+}
+
+.market {
+    padding-top: 35rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.market .col-3 {
+    flex: 1 1 20rem;
+    position: relative;
+}
+
+.market .col-3 img.one {
+    width: 100%;
+    height: 45rem;
+}
+
+.market .col-4 {
+    flex: 1 1 20rem;
+}
+
+.market .col-3 .service {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #141622;
+    padding: 1rem;
+    border-radius: 20px;
+}
+
+.market .col-3 .service img.two {
+    width: 80px;
+}
+
+.market .col-3 .service span {
+    color: #fff;
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.market .col-4 h4 {
+    color: var(--main-color);
+    font-size: 2rem;
+    letter-spacing: 1px;
+    font-size: 500;
+    padding-bottom: 1rem;
+    font-family: "Poppins", sans-serif;
+}
+
+.market .col-4 h4 i {
+    padding-right: 0.5rem;
+}
+
+.market .col-4 h3 {
+    font-size: 4rem;
+    color: var(--text-color);
+    padding-bottom: 2rem;
+    text-transform: capitalize;
+}
+
+.market .col-4 h3 span{
+    color: var(--main-color);
+}
+
+.market .col-4 p.text {
+    font-size: 1.4rem;
+    color: var(--text-color);
+    padding-bottom: 1rem;
+}
+
+.market .col-4 .p1 {
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+.market .col-4 .p1 i{
+    padding-right: 0.5rem;
+    color: var(--main-color);
+    font-size: 1.6rem;
+}
+
+.market .col-4 button {
+    position: relative;
+    margin-top: 2.5rem;
+    background: var(--main-color);
+    color: #fff;
+    padding: 1.5rem 3.5rem;
+    font-size: 1.6rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.market .col-4 button i {
+    position: absolute;
+    top: 20px;
+    font-size: 2rem;
+}
+
+.market .col-4 button:hover {
+    background: var(--text-color);
+}
+
+@media(max-width:1500px) {
+    .search .find {
+        max-width: 100%;
+    }
+
+    .search {
+        padding: 0 0;
+    }
+}
+
+@media(max-width:991px) {
+    .find .find-row {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .market {
+        padding-top: 40rem;
+    }
+
+    section {
+        padding: 2.5rem 10rem;
+    }
+}
+
+@media(max-width:768px) {
+    .find .find-row {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .market {
+        padding-top: 50rem;
+    }
+}
+
+@media(max-width:600px) {
+    section {
+        padding: 2.5rem 7rem;
+    }
+
+    .find .find-row {
+        gap: 0.5rem;
+    }
+
+    .market .col-4 h3 {
+        font-size: 2.9rem;
+    }
+}
+
+@media(max-width:450px) {
+    .find .find-row {
+        grid-template-columns: 1fr;
+    }
+
+    .find .find-row select {
+        width: 100%;
+    }
+
+    .market .col-3 img.one {
+        height: 35rem;
+    }
+
+    .market {
+        padding-top: 80rem;
+    }
+
+    .market .col-4 h3 {
+        font-size: 2.9rem;
+    }
+}
