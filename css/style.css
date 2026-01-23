@@ -990,3 +990,160 @@ section {
         padding: 2rem 7rem;
     }
 }
+
+/* arrivals section start */
+.arrivals {
+    text-align: center;
+    padding-top: 7rem;
+}
+
+.arrivals h4 {
+    color: var(--main-color);
+    font-size: 2rem;
+    text-transform: uppercase;
+    padding-bottom: 1.5rem;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 2px;
+}
+
+.arrivals h4 i {
+    padding-right: 0.5rem;
+}
+
+.arrivals h1 {
+    padding-bottom: 4rem;
+    font-size: 4.7rem;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    /* color: var(--text-color);*/
+    color: #fff;
+}
+
+.arrivals h1 span {
+    color: var(--main-color);
+}
+
+.arrivals .arr-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2.5rem;
+}
+
+.arr-row .arr-col {
+    padding: 1rem;
+    box-shadow: 0 0 5px #646161;
+    background: #fff;
+    border-radius: 10px;
+    text-align: justify;
+}
+
+.arr-row .arr-col .image {
+    width: 100%;
+    height: 20rem;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: 0.5s ease;
+}
+
+.arr-row .arr-col .image img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.arr-row .arr-col .image:hover img {
+    transform: scale(1.3);
+}
+
+.arr-row .arr-col h5 {
+    font-size: 1.8rem;
+    padding: 1rem 0;
+    color: var(--text-color);
+}
+
+.arr-row .arr-col .rating {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding-bottom: 0.5rem;
+}
+
+.arr-col .rating .stars i {
+    color: var(--main-color);
+    font-size: 1.4rem;
+}
+
+.arr-col .rating .review span {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #646161;
+}
+
+.arr-col .features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.arr-col .features span {
+    font-size: 1.4rem;
+    color: #646161;
+}
+
+.arr-col .features span i {
+    color: var(--main-color);
+    padding-right: 0.3rem;
+}
+
+.arr-col .price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.arr-col .price p {
+    color: var(--main-color);
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.arr-col .price button {
+    background: var(--main-color);
+    padding: 0.8rem 2.8rem;
+    color: #fff;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.arr-col .price button:hover {
+    background: var(--text-color);
+}
+
+@media(max-width:1350px) {
+    .arrivals .arr-row {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(max-width:768px) {
+    .arrivals .arr-row {
+        grid-template-columns: 1fr;
+    }
+
+    .arr-row .arr-col .image {
+        height: auto;
+    }
+}
+
+@media(max-width:450px) {
+    .arrivals h1 {
+        font-size: 2.4rem;
+    }
+}
