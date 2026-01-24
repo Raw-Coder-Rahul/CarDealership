@@ -1012,14 +1012,39 @@ section h4 i {
 }
 
 section h1 {
-    padding-bottom: 4rem;
+    margin-bottom: 6rem;
+    padding-bottom: 2.5rem;
     font-size: 4.7rem;
     text-transform: capitalize;
     letter-spacing: 1px;
     /* color: var(--text-color);*/
     color: #fff;
+    position: relative;
 }
 
+section h1::before {
+    content: '';
+    position: absolute;
+    background: #fff;
+    border: 4px solid var(--main-color);
+    bottom: 0;
+    width: 100px;
+    height: 10px;
+    border-radius: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+section h1::after {
+    content: '';
+    position: absolute;
+    left: 48%;
+    transform: translateX(50%);
+    bottom: 1.1rem;
+    width: 20px;
+    height: 10px;
+    border-radius: 40px;
+}
 section h1 span {
     color: var(--main-color);
 }
@@ -1169,5 +1194,174 @@ section h1 span {
 @media(max-width:450px) {
     section h1 {
         font-size: 2.4rem;
+    }
+}
+
+/* body type section start */
+.type {
+    text-align: center;
+    padding-top: 7rem;
+    padding-bottom: 5rem;
+}
+
+.type h4 {
+    font-size: 2rem;
+    color: var(--main-color);
+    margin-bottom: 1rem;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.type h1 {
+    font-size: 3.6rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 4rem;
+}
+
+.type h1 span {
+    background: linear-gradient(90deg, gold, #ffcc00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.type .type-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2.5rem;
+    padding: 0 2rem;
+}
+
+.type-row .type-col {
+    width: 100%;
+    padding: 2rem 1rem;
+    border-radius: 1rem;
+    background: #1c1c1e;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid rgba(212,175,55,0.4); /* subtle gold border */
+}
+
+.type-row .type-col:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 18px 35px rgba(0,0,0,0.45);
+    border-color: #d4af37;
+}
+
+.type-row .type-col img {
+    width: 100%;
+    height: 12rem;
+    object-fit: contain;
+    margin-bottom: 1.5rem;
+    filter: drop-shadow(0 6px 12px rgba(0,0,0,0.25));
+    transition: transform 0.3s ease;
+}
+
+.type-row .type-col:hover img {
+    transform: scale(1.05);
+}
+
+.type-row .type-col h5 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #f5f5f5;
+    transition: color 0.3s ease;
+}
+
+.type-row .type-col:hover h5 {
+    color: #d4af37;
+}
+
+
+@media (max-width:991px) {
+    .type h1 { font-size: 3rem; }
+    .type h4 { font-size: 1.8rem; }
+}
+
+@media (max-width:768px) {
+    .type h1 { font-size: 2.6rem; }
+    .type h4 { font-size: 1.6rem; }
+    .type-row { gap: 2rem; }
+}
+
+@media (max-width:480px) {
+    .type h1 { font-size: 2.2rem; }
+    .type h4 { font-size: 1.4rem; }
+    .type-row .type-col h5 { font-size: 1.4rem; }
+}
+
+
+/* play button section start */
+.play {
+    width: 100%;
+    min-height: 80vh;
+    background: url(/Images/type/bg.jpg) center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.play .play-btn {
+    background: linear-gradient(135deg, #dc143c, #d4af37);
+    color: #fff;
+    font-size: 4rem;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: relative;
+    box-shadow: 0 12px 25px rgba(0,0,0,0.4);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.play .play-btn:hover {
+    transform: translateY(-8px) scale(1.05);
+    box-shadow: 0 18px 35px rgba(0,0,0,0.5);
+}
+
+.play .play-btn::before,
+.play .play-btn::after {
+    content: '';
+    position: absolute;
+    border: 6px solid rgba(220,20,60,0.5); 
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%) scale(0.6);
+    animation: pulse 1.8s linear infinite;
+    opacity: 0.8;
+}
+
+.play .play-btn::after {
+    border-color: rgba(212,175,55,0.5);
+    animation-delay: 0.9s;
+}
+
+@keyframes pulse {
+    0% {
+        transform: translate(-50%, -50%) scale(0.6);
+        opacity: 0.8;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1.6);
+        opacity: 0;
     }
 }
