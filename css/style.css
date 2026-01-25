@@ -1759,3 +1759,129 @@ section h1 span {
         font-size: 2.4rem;
     }
 }
+
+/* client section start */
+.client {
+    text-align: center;
+    padding-top: 7rem;
+    padding-bottom: 5rem;
+}
+
+.client h4 {
+    font-size: 2rem;
+    color: var(--main-color);
+    margin-bottom: 1rem;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.client h1 {
+    font-size: 3.6rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 4rem;
+}
+
+.client h1 span {
+    background: linear-gradient(90deg, #d4af37, #b76e79);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.client .slide {
+    background: #1c1c1e;
+    border-radius: 1rem;
+    margin: 1rem;
+    padding: 2rem;
+    box-shadow: 0 12px 25px rgba(0,0,0,0.3);
+    border: 1px solid rgba(212,175,55,0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.client .slide:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 18px 35px rgba(0,0,0,0.45);
+    border-color: #d4af37;
+    z-index: 5;
+}
+
+.client .slide img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: #fff;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+    transition: transform 0.3s ease;
+}
+
+.client .slide:hover img {
+    transform: scale(1.05);
+}
+
+.client .slide h5 {
+    font-size: 1.8rem;
+    color: #f5f5f5;
+    margin: 0.5rem 0;
+    font-weight: 600;
+}
+
+.client .slide span {
+    color: #d4af37;
+    font-size: 1.4rem;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.client .slide p {
+    color: #ccc;
+    font-size: 1.3rem;
+    line-height: 1.6;
+    margin: 1rem 0;
+}
+
+.client .slide .stars {
+    margin-top: 1rem;
+}
+
+.client .slide i {
+    color: #ffd700;
+    font-size: 1.4rem;
+    margin: 0 0.2rem;
+    transition: color 0.3s ease;
+}
+
+.client .slide:hover i {
+    color: #ffcc00;
+}
+
+@media(max-width:991px) {
+    .client h1 { font-size: 3rem; }
+    .client .slide { padding: 1.6rem; margin: 0.8rem; }
+}
+
+@media(max-width:768px) {
+    .client h1 { font-size: 2.6rem; }
+    .client .slide h5 { font-size: 1.6rem; }
+    .client .slide p { font-size: 1.2rem; }
+}
+
+@media(max-width:480px) {
+    .client h1 { font-size: 2.2rem; }
+    .client .slide { padding: 1.2rem; margin: 0.6rem; }
+    .client .slide img { width: 100px; height: 100px; }
+    .client .slide h5 { font-size: 1.4rem; }
+    .client .slide p { font-size: 1.1rem; }
+}
+
+/* download section start */
