@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Single Page - RS</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+    <link href="https://cdn.boxicons.com/3.0.8/fonts/basic/boxicons.min.css" rel="stylesheet">
+    
+    <!-- swiper css link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+</head>
+<body>
+    <!-- top-header -->
+    <div class="top-header">
+        <div class="out-box">
+            <div class="inside-box">
+                <div class="col-1">
+                    <span><i class='bx  bx-envelope'></i> info@gmail.com</span>
+                    <span><i class='bx  bx-phone-ring'></i> +2 123 658 5554</span>
+                    <span><i class='bx  bx-alarm'></i> Mon - Sun (08 AM - 10 PM)</span>
+                </div>
+
+                <div class="col-2">
+                    <a href="#"><i class='bx  bx-arrow-to-right-stroke'></i> Login</a>
+                    <a href="#"><i class='bx  bx-user'></i> Register</a>
+                    <span>Follow Us:</span>
+                    <div class="social">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- navbar section start -->
+    <header class="header">
+        <div class="logo">
+            <img src="/Images/logo/S.png" alt="">
+        </div>
+        <nav>
+            <div class="navbar">
+                    <ul class="navLink">
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="/about.html" class="active">About</a></li>
+                        <li><a href="#">Inventory<i class='bx  bx-chevron-down'></i> </a>
+                            <ul class="drop-down">
+                                <li><a href="/inventory_grid.html">Inventory Grid</a></li>
+                                <li><a href="/inventory_list.html">Inventory List</a></li>
+                                <li><a href="/inventory_single.html">Inventory Single</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Pages<i class='bx  bx-chevron-down'></i> </a>
+                            <ul class="drop-down">
+                                <li><a href="/about.html">About</a></li>
+                                <li><a href="#">Car Listing<i class='bx  bx-chevron-down chev'></i> </a>
+                                    <ul class="drop-down-two">
+                                        <li><a href="#">Listing Grid</a></li>
+                                        <li><a href="#">Listing List</a></li>
+                                        <li><a href="#">Listing Single</a></li>
+                                        <li><a href="#">Compare</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Account</a></li>
+                                <li><a href="#">My Account<i class='bx  bx-chevron-down chev'></i> </a>
+                                    <ul class="drop-down-three">
+                                        <li><a href="#">Dashboard</a></li>
+                                        <li><a href="#">My Profile</a></li>
+                                        <li><a href="#">My Listing</a></li>
+                                        <li><a href="#">Add Listing</a></li>
+                                        <li><a href="#">My Favourites</a></li>
+                                        <li><a href="#">Message</a></li>
+                                        <li><a href="#">Setting</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Authentication<i class='bx  bx-chevron-down chev'></i> </a>
+                                    <ul class="drop-down-four">
+                                        <li><a href="#">Login</a></li>
+                                        <li><a href="#">Register</a></li>
+                                        <li><a href="#">Forgot Password</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Services<i class='bx  bx-chevron-down chev'></i> </a>
+                                    <ul class="drop-down-five">
+                                        <li><a href="#">Services</a></li>
+                                        <li><a href="#">Services Single</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Dealer<i class='bx  bx-chevron-down chev'></i> </a>
+                                    <ul class="drop-down-six">
+                                        <li><a href="#">Dealer</a></li>
+                                        <li><a href="#">Dealer Single</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Extra Pages</a></li>
+                                <li><a href="#">Our Team</a></li>
+                                <li><a href="#">Pricing Plan</a></li>
+                                <li><a href="#">Calculator</a></li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Testimonials</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Shop<i class='bx  bx-chevron-down'></i> </a>
+                            <ul class="drop-down">
+                                <li><a href="/shop/shop.html">Shop</a></li>
+                                <li><a href="/shop/shop_cart.html">Shop Cart</a></li>
+                                <li><a href="/shop/shop_checkout.html">Shop Checkout</a></li>
+                                <li><a href="/shop/shop_single.html" class="active">Shop Single</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Blog<i class='bx  bx-chevron-down'></i> </a>
+                            <ul class="drop-down">
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Blog Single</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+            </div>
+            <div class="others">
+                <i class='bx  bx-search'></i> 
+                <i class="fa-solid fa-cart-arrow-down cart"></i>
+               <div class="addBtn"><i class='bx  bx-plus-circle'></i> Add Listing</div>
+                <i class='bx  bx-menu-left' id="menuBtn"></i> 
+            </div>
+        </nav>
+    </header>
+
+    <!-- Shop Single Page section start -->
+    <div class="inventory">
+        <h2>Shop Single</h2>
+        <div class="link">
+            <a href="/index.html">Home</a>
+            <span>>>></span>
+            <p>Shop Single Page</p>
+        </div>
+    </div>
+
+    <!-- Shop Single section start -->
+    <div class="shop_single">
+        <div class="left">
+            <img src="/Images/shop/spark_plug.png" alt="spark plug" class="main">
+            <div class="row">
+                <img src="/Images/shop/spark_plug.png" alt="spark plug">
+                <img src="/Images/shop/disbreak.png" alt="Disc Brake">
+                <img src="/Images/shop/suspansion.png" alt="Suspension">
+                <img src="/Images/shop/disbreak.png" alt="Disc Break">
+            </div>
+        </div>
+
+        <div class="right">
+            <h2>Car Engine Parts</h2>
+            <div class="rate">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half"></i>
+                <p>(4 Customer Reviews)</p>
+            </div>
+            <p class="price"><span class="old">₹50666</span>₹42759</p>
+            <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias recusandae fuga iusto velit suscipit fugiat repellat, temporibus libero distinctio dolore tenetur veritatis? Tempora exercitationem quod nobis voluptate earum quae quibusdam.</p>
+            
+            <div class="details">
+                <div class="col">
+                    <p>Stock:</p>
+                    <p>Available</p>
+                </div>
+                <div class="col">
+                    <p>SKU:</p>
+                    <p>814ETDZ</p>
+                </div>
+                <div class="col">
+                    <p>Quantity:</p>
+                    <span>
+                        <input type="number" value="1">
+                    </span>
+                </div>
+                <div class="col">
+                    <p>Category:</p>
+                    <p>Car Parts</p>
+                </div>
+                <div class="col">
+                    <p>Tags:</p>
+                    <p>Car, Shop, Tire</p>
+                </div>
+                <div class="col social">
+                    <p>SHARE:</p>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <i class="fa-brands fa-x-twitter"></i>
+                    <i class="fa-brands fa-square-linkedin"></i>
+                </div>
+            </div>
+
+            <div class="add-cart">
+                <a href="#">
+                    <i class='bx  bx-cart-plus'></i>
+                    Add To Cart
+                </a>
+                <div class="other">
+                    <i class='bx  bx-heart'></i> 
+                    <i class='bx  bx-arrow-down-up'></i> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="descript">
+        <div class="row-one">
+            <button>Description</button>
+            <button>Additional Info</button>
+            <button>Reviews (05)</button>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur dolorum excepturi facilis odit ab, quod quasi? Pariatur vero atque totam, esse ab similique, sint excepturi molestias ratione quas provident dolore?
+        Repellendus debitis doloribus neque suscipit ut similique, illo deleniti libero. Dicta, rerum corporis porro nihil quaerat blanditiis sint illum facilis excepturi doloribus explicabo distinctio fuga quibusdam at? Sequi, quisquam nulla!
+        Dicta dolor sed dolore eius voluptas culpa, adipisci sequi natus est commodi porro beatae labore temporibus facilis vero maiores ullam similique error in deleniti? Libero dolorem aliquam quam temporibus facilis?
+        Beatae pariatur expedita nemo architecto! Quo dicta cupiditate voluptates nihil neque voluptas. Quo id veniam maxime corporis assumenda sapiente. Earum sint dolorum repellat eveniet aspernatur aut modi reprehenderit. Laborum, nobis?
+        Inventore accusamus ipsam quos labore consectetur, veniam dolorem aspernatur ea rerum voluptas ratione adipisci veritatis, temporibus quod quis fuga? Soluta autem voluptatem ipsa odio! Architecto quaerat reiciendis adipisci nisi debitis?
+        Nesciunt quae aliquid delectus doloribus optio numquam vitae quam illum similique vel nostrum necessitatibus totam sint eaque assumenda voluptate, minus ipsum asperiores fugiat iure sapiente quidem? Sunt sit repellendus nesciunt.
+        Veritatis quidem magni quo quaerat amet cupiditate fuga voluptatum odio nisi illum, quis perferendis distinctio minus tempore aliquid facilis qui ullam officia. Molestias aperiam dicta sit suscipit! Repellat, ullam neque!
+        Maiores facilis repellat architecto recusandae ut. Ipsum doloribus cupiditate odit quis vero recusandae cum officia, vel dolor fuga repellat ducimus sapiente quae repellendus nulla perspiciatis tempore nesciunt dolore nihil beatae?
+        Culpa cumque, eaque laboriosam ratione accusamus omnis veniam, corporis quis officiis quam sapiente nisi veritatis voluptates! Sequi, voluptatum error numquam nemo, et quae eos laudantium odio commodi eligendi quasi minima?
+        Culpa ipsa fugit alias voluptatum, earum itaque delectus sunt amet tenetur maxime vero saepe, architecto quisquam. Officiis quod vel perspiciatis eaque! Nobis, voluptate vel repellendus vero totam omnis non illo.</p>
+    </div>
+
+    <!-- related Items section start -->
+    <div class="related">
+        <h2>Related Items</h2>
+        <div class="row-item">
+            <article class="item-col">
+                <div class="image">
+                    <img src="/Images/shop/disbreak.png" alt="Disc Brake">
+                    <div class="carts">
+                        <i class='bx bx-heart' aria-label="Add to wishlist"></i> 
+                        <i class='bx bx-eye-alt' aria-label="View details"></i> 
+                        <i class='bx bx-cart-alt' aria-label="Add to cart"></i> 
+                    </div>
+                </div>
+                <div class="rates" aria-label="4.5 out of 5 stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                </div>
+                <h4>Disc Brake</h4>
+                <p><span class="old">₹50478</span> ₹45978</p>
+            </article>
+
+            <div class="item-col">
+                <div class="image">
+                    <img src="/Images/shop/exhaust_pipe.png" alt="">
+                    <div class="carts">
+                        <i class='bx  bx-heart'></i>
+                        <i class='bx  bx-eye-alt'></i> 
+                        <i class='bx  bx-cart-alt'></i> 
+                    </div>
+                </div>
+                <div class="rates">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                </div>
+                <h4>Car Engine Parts</h4>
+                <p><span>₹50478</span>₹45978</p>
+            </div>
+            <div class="item-col">
+                <div class="image">
+                    <img src="/Images/shop/ferrari_tyres.png" alt="">
+                    <div class="carts">
+                        <i class='bx  bx-heart'></i>
+                        <i class='bx  bx-eye-alt'></i> 
+                        <i class='bx  bx-cart-alt'></i> 
+                    </div>
+                </div>
+                <div class="rates">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                </div>
+                <h4>Car Engine Parts</h4>
+                <p><span>₹50478</span>₹45978</p>
+            </div>
+            <div class="item-col">
+                <div class="image">
+                    <img src="/Images/shop/lamborgini_engine.png" alt="">
+                    <div class="carts">
+                        <i class='bx  bx-heart'></i>
+                        <i class='bx  bx-eye-alt'></i> 
+                        <i class='bx  bx-cart-alt'></i> 
+                    </div>
+                </div>
+                <div class="rates">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                </div>
+                <h4>Car Engine Parts</h4>
+                <p><span>₹50478</span>₹45978</p>
+            </div>
+            <div class="item-col">
+                <div class="image">
+                    <img src="/Images/shop/spark_plug.png" alt="">
+                    <div class="carts">
+                        <i class='bx  bx-heart'></i>
+                        <i class='bx  bx-eye-alt'></i> 
+                        <i class='bx  bx-cart-alt'></i> 
+                    </div>
+                </div>
+                <div class="rates">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                </div>
+                <h4>Car Engine Parts</h4>
+                <p><span class="old">₹50478</span>₹45978</p>
+            </div>
+            <div class="item-col">
+                <div class="image">
+                    <img src="/Images/shop/suspansion.png" alt="">
+                    <div class="carts">
+                        <i class='bx  bx-heart'></i>
+                        <i class='bx  bx-eye-alt'></i> 
+                        <i class='bx  bx-cart-alt'></i> 
+                    </div>
+                </div>
+                <div class="rates">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                </div>
+                <h4>Car Engine Parts</h4>
+                <p><span>₹50478</span>₹45978</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer section start -->
+    <div class="footer">
+        <div class="footer-row">
+            <div class="footer-col">
+                <img src="/Images/logo/S.png" alt="">
+                <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus ab aperiam dolor repellendus quod optio.</p>
+                <span><i class="bx bx-phone"></i>+91 9876543210</span>
+                <span><i class="bx bx-location-plus"></i>Kolkata,West Bengal</span>
+                <span><i class="bx bx-envelope"></i>info@gmail.com</span>
+            </div>
+            <div class="footer-col">
+                <h5>Quick Links</h5>
+                <a href="#"><i class='bx  bx-chevron-right'></i> About Us</a>
+                <a href="#"><i class='bx  bx-chevron-right'></i> Update News</a>
+                <a href="#"><i class='bx  bx-chevron-right'></i> Testimonials</a>
+                <a href="#"><i class='bx  bx-chevron-right'></i> Terms Of Service</a>
+                <a href="#"><i class='bx  bx-chevron-right'></i> Privacy Policy</a>
+                <a href="#"><i class='bx  bx-chevron-right'></i> Our Dealers</a>
+            </div>
+            <div class="footer-col">
+                <h5>Support Center</h5>
+                <a href="#"><i class='bx  bx-chevron-right'></i> FAQ's</a>
+                <a href="#"><i class='bx  bx-chevron-right'></i> Affilitates</a>
+                <a href="#"><i class='bx  bx-chevron-right'></i> Booking Tips</a>
+                <a href="#"><i class='bx  bx-chevron-right'></i> Sell Vericles</a>
+                <a href="#"><i class='bx  bx-chevron-right'></i> Contact Us</a>
+                <a href="#"><i class='bx  bx-chevron-right'></i> Sitmap</a>
+            </div>
+            <div class="footer-col">
+                <h5>Newsletter</h5>
+                <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <input type="text" placeholder="Your Email">
+                <button>Subscribe Now <i class="fa-brands fa-telegram"></i></button>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; Copyright 2026 <span>RS</span> All Right Reserved.</p>
+            <div class="social">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-square-linkedin"></i>
+            </div>
+        </div>
+        
+        <!-- scroll Top button Adding -->
+        <a href="#" class="scrollBtn">
+            <i class='bx  bx-chevrons-up'></i> 
+        </a>
+    </div>
+
+    <!-- swiper js link -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="/js/payment.js"></script>
+</body>
+</html>

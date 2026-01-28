@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Checkout Page - RS</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+    <link href="https://cdn.boxicons.com/3.0.8/fonts/basic/boxicons.min.css" rel="stylesheet">
+    
+    <!-- swiper css link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+</head>
+<body>
+    <!-- top-header -->
+    <div class="top-header">
+        <div class="out-box">
+            <div class="inside-box">
+                <div class="col-1">
+                    <span><i class='bx  bx-envelope'></i> info@gmail.com</span>
+                    <span><i class='bx  bx-phone-ring'></i> +2 123 658 5554</span>
+                    <span><i class='bx  bx-alarm'></i> Mon - Sun (08 AM - 10 PM)</span>
+                </div>
+
+                <div class="col-2">
+                    <a href="#"><i class='bx  bx-arrow-to-right-stroke'></i> Login</a>
+                    <a href="#"><i class='bx  bx-user'></i> Register</a>
+                    <span>Follow Us:</span>
+                    <div class="social">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- navbar section start -->
+    <header class="header">
+        <div class="logo">
+            <img src="/Images/logo/S.png" alt="">
+        </div>
+        <nav>
+            <div class="navbar">
+                    <ul class="navLink">
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="/about.html" class="active">About</a></li>
+                        <li><a href="#">Inventory<i class='bx  bx-chevron-down'></i> </a>
+                            <ul class="drop-down">
+                                <li><a href="/inventory_grid.html">Inventory Grid</a></li>
+                                <li><a href="/inventory_list.html">Inventory List</a></li>
+                                <li><a href="/inventory_single.html">Inventory Single</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Pages<i class='bx  bx-chevron-down'></i> </a>
+                            <ul class="drop-down">
+                                <li><a href="/about.html">About</a></li>
+                                <li><a href="#">Car Listing<i class='bx  bx-chevron-down chev'></i> </a>
+                                    <ul class="drop-down-two">
+                                        <li><a href="#">Listing Grid</a></li>
+                                        <li><a href="#">Listing List</a></li>
+                                        <li><a href="#">Listing Single</a></li>
+                                        <li><a href="#">Compare</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Account</a></li>
+                                <li><a href="#">My Account<i class='bx  bx-chevron-down chev'></i> </a>
+                                    <ul class="drop-down-three">
+                                        <li><a href="#">Dashboard</a></li>
+                                        <li><a href="#">My Profile</a></li>
+                                        <li><a href="#">My Listing</a></li>
+                                        <li><a href="#">Add Listing</a></li>
+                                        <li><a href="#">My Favourites</a></li>
+                                        <li><a href="#">Message</a></li>
+                                        <li><a href="#">Setting</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Authentication<i class='bx  bx-chevron-down chev'></i> </a>
+                                    <ul class="drop-down-four">
+                                        <li><a href="#">Login</a></li>
+                                        <li><a href="#">Register</a></li>
+                                        <li><a href="#">Forgot Password</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Services<i class='bx  bx-chevron-down chev'></i> </a>
+                                    <ul class="drop-down-five">
+                                        <li><a href="#">Services</a></li>
+                                        <li><a href="#">Services Single</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Dealer<i class='bx  bx-chevron-down chev'></i> </a>
+                                    <ul class="drop-down-six">
+                                        <li><a href="#">Dealer</a></li>
+                                        <li><a href="#">Dealer Single</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Extra Pages</a></li>
+                                <li><a href="#">Our Team</a></li>
+                                <li><a href="#">Pricing Plan</a></li>
+                                <li><a href="#">Calculator</a></li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Testimonials</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Shop<i class='bx  bx-chevron-down'></i> </a>
+                            <ul class="drop-down">
+                                <li><a href="/shop/shop.html">Shop</a></li>
+                                <li><a href="/shop/shop_cart.html">Shop Cart</a></li>
+                                <li><a href="/shop/shop_checkout.html" class="active">Shop Checkout</a></li>
+                                <li><a href="#">Shop Single</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Blog<i class='bx  bx-chevron-down'></i> </a>
+                            <ul class="drop-down">
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Blog Single</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+            </div>
+            <div class="others">
+                <i class='bx  bx-search'></i> 
+                <i class="fa-solid fa-cart-arrow-down cart"></i>
+               <div class="addBtn"><i class='bx  bx-plus-circle'></i> Add Listing</div>
+                <i class='bx  bx-menu-left' id="menuBtn"></i> 
+            </div>
+        </nav>
+    </header>
+
+    <!-- Shop Checkout Page section start -->
+    <div class="inventory">
+        <h2>Shop Checkout</h2>
+        <div class="link">
+            <a href="/index.html">Home</a>
+            <span>>>></span>
+            <p>Shop Checkout Page</p>
+        </div>
+    </div>
+
+    <!-- Shop Checkout section start -->
+    <div class="checkout">
+        <div class="billing">
+            <div class="left">
+                <h2>Billing Address</h2>
+                <div class="row">
+                    <div class="inputBx">
+                        <label for="">First Name *</label>
+                        <input type="text" placeholder="Your First Name">
+                    </div>
+                    <div class="inputBx">
+                        <label for="">Middle Name *</label>
+                        <input type="text" placeholder="Your Middle Name">
+                    </div>
+                    <div class="inputBx">
+                        <label for="">Last Name *</label>
+                        <input type="text" placeholder="Your Last Name">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="inputBx">
+                        <label for="">Phone *</label>
+                        <input type="text" placeholder="Your Phone">
+                    </div>
+                    <div class="inputBx">
+                        <label for="">Email *</label>
+                        <input type="email" placeholder="Your Email">
+                    </div>
+                </div>
+                <div class="inputBx">
+                    <label for="">Address *</label>
+                    <input type="text" placeholder="Your Address">
+                </div>
+            </div>
+
+            <div class="right">
+                <h2>Cart Summary</h2>
+                <div class="summary_info">
+                    <div class="sum-col"><p>Product Qty:</p><span>5</span></div>
+                    <div class="sum-col"><p>Shipping Cost:</p><span>₹ 2250.00</span></div>
+                    <div class="sum-col"><p>Discount:</p><span>₹ 450.00</span></div>
+                    <div class="sum-col"><p>Vat:</p><span>₹ 1800.00</span></div>
+                    <div class="sum-col"><p>Sub Total:</p><span>₹ 408600.00</span></div>
+                    <div class="sum-col amount"><p>Total:</p><span class="total">₹ 408600.00</span></div>
+                    <a href="#" class="confirm-btn">Confirm Payment <i class='bx  bx-arrow-right'></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Payment info section start -->
+        <div class="payment">
+            <h2>Payment Info</h2>
+            <div class="inputBx">
+                <label for="transaction">Choose Payment Method</label>
+                <select id="transaction" onchange="showTransactionFields(this.value)">
+                    <option value="">-- Select Method --</option>
+                    <option value="upi">UPI</option>
+                    <option value="crypto">Cryptocurrency</option>
+                    <option value="neft">NEFT</option>
+                    <option value="rtgs">RTGS</option>
+                    <option value="swift">SWIFT Transfer</option>
+                    <option value="wire">International Wire Transfer</option>
+                    <option value="gold">Digital Gold</option>
+                    <option value="paypal">PayPal</option>
+                    <option value="card">Credit/Debit Card</option>
+                    <option value="wallet">Mobile Wallets</option>
+                </select>
+            </div>
+
+            <div class="transaction-fields" id="upi" style="display:none;">
+                <div class="instruction">
+                    <p><strong>Limit:</strong> ₹1,00,000 per transaction (₹5,00,000 for special categories)</p>
+                    <p><strong>Time:</strong> Instant, 24x7</p>
+                    <p><strong>Platforms:</strong> Google Pay, PhonePe, Paytm, BHIM</p>
+                </div>
+                <div class="inputBx"><label>UPI ID *</label><input type="text" placeholder="example@upi"></div>
+                <div class="inputBx"><label>Name *</label><input type="text" placeholder="Account Holder Name"></div>
+                <div class="inputBx"><label>Phone *</label><input type="text" placeholder="Registered Mobile"></div>
+                <button class="confirm-btn">Confirm Details</button>
+            </div>
+
+    
+            <div class="transaction-fields" id="crypto" style="display:none;">
+                <div class="instruction">
+                    <p><strong>Limit:</strong> ~₹50,00,000 per day equivalent</p>
+                    <p><strong>Time:</strong> 10–60 minutes (blockchain confirmation)</p>
+                    <p><strong>Platforms:</strong> Binance, WazirX, CoinDCX</p>
+                </div>
+                <div class="inputBx"><label>Wallet Address *</label><input type="text" placeholder="Your Wallet Address"></div>
+                <div class="inputBx"><label>Currency *</label><input type="text" placeholder="Bitcoin, Ethereum, etc."></div>
+                <button class="confirm-btn">Confirm Details</button>
+            </div>
+
+            <div class="transaction-fields" id="neft" style="display:none;">
+                <div class="instruction">
+                    <p><strong>Limit:</strong> No upper limit (bank may cap)</p>
+                    <p><strong>Time:</strong> 30 min – 2 hrs (batch settlement)</p>
+                    <p><strong>Platforms:</strong> SBI, HDFC, ICICI NetBanking</p>
+                </div>
+                <div class="inputBx"><label>Bank Name *</label><input type="text" placeholder="Bank Name"></div>
+                <div class="inputBx"><label>Account Number *</label><input type="text" placeholder="Account Number"></div>
+                <div class="inputBx"><label>Confirm Account Number *</label><input type="text" placeholder="Confirm Account Number"></div>
+                <div class="inputBx"><label>IFSC Code *</label><input type="text" placeholder="IFSC Code"></div>
+                <button class="confirm-btn">Confirm Details</button>
+            </div>
+
+            <div class="transaction-fields" id="rtgs" style="display:none;">
+                <div class="instruction">
+                    <p><strong>Limit:</strong> Minimum ₹2,00,000; no max limit</p>
+                    <p><strong>Time:</strong> Real-time, within minutes</p>
+                    <p><strong>Platforms:</strong> Axis Bank, Kotak, SBI</p>
+                </div>
+                <div class="inputBx"><label>Bank Name *</label><input type="text" placeholder="Bank Name"></div>
+                <div class="inputBx"><label>Account Number *</label><input type="text" placeholder="Account Number"></div>
+                <div class="inputBx"><label>Confirm Account Number *</label><input type="text" placeholder="Confirm Account Number"></div>
+                <div class="inputBx"><label>IFSC Code *</label><input type="text" placeholder="IFSC Code"></div>
+                <button class="confirm-btn">Confirm Details</button>
+            </div>
+
+            <div class="transaction-fields" id="swift" style="display:none;">
+                <div class="instruction">
+                    <p>strong>Limit:</strong> Typically ₹50,00,000+ (depends on bank & country)</p>
+                    <p><strong>Time:</strong> 1–3 business days</p>
+                    <p><strong>Platforms:</strong> HSBC, CitiBank, Standard Chartered</p>
+                </div>
+                <div class="inputBx"><label>SWIFT Code *</label><input type="text" placeholder="SWIFT Code"></div>
+                <div class="inputBx"><label>Bank Name *</label><input type="text" placeholder="Bank Name"></div>
+                <div class="inputBx"><label>Account Number *</label><input type="text" placeholder="Account Number"></div>
+                <div class="inputBx"><label>Confirm Account Number *</label><input type="text" placeholder="Confirm Account Number"></div>
+                <button class="confirm-btn">Confirm Details</button>
+            </div>
+
+            <div class="transaction-fields" id="wire" style="display:none;">
+                <div class="instruction">
+                    <p><strong>Limit:</strong> ₹50,00,000+ (depends on RBI FEMA rules)</p>
+                    <p><strong>Time:</strong> 1–2 business days</p>
+                    <p><strong>Platforms:</strong> ICICI, HDFC, CitiBank</p>
+                </div>
+                <div class="inputBx"><label>Bank Name *</label><input type="text" placeholder="Bank Name"></div>
+                <div class="inputBx"><label>IBAN *</label><input type="text" placeholder="IBAN"></div>
+                <div class="inputBx"><label>Account Number *</label><input type="text" placeholder="Account Number"></div>
+                <button class="confirm-btn">Confirm Details</button>
+            </div>
+
+            <div class="transaction-fields" id="gold" style="display:none;">
+                <div class="instruction">
+                    <p><strong>Limit:</strong> ₹2,00,000 per day</p>
+                    <p><strong>Time:</strong> Instant</p>
+                    <p><strong>Platforms:</strong> MMTC-PAMP, SafeGold, Paytm Gold</p>
+                </div>
+                <div class="inputBx"><label>Gold Account ID *</label><input type="text" placeholder="Your Gold Account ID"></div>
+                <div class="inputBx"><label>Provider *</label><input type="text" placeholder="Provider Name"></div>
+                <button class="confirm-btn">Confirm Details</button>
+            </div>
+
+            <div class="transaction-fields" id="paypal" style="display:none;">
+                <div class="instruction">
+                    <p><strong>Limit:</strong> ~₹10,00,000 equivalent per transaction</p>
+                    <p><strong>Time:</strong> Instant to 24 hrs</p>
+                    <p><strong>Platforms:</strong> PayPal India, linked bank accounts</p>
+                </div>
+                <div class="inputBx"><label>PayPal Email *</label><input type="email" placeholder="Your PayPal Email"></div>
+                <button class="confirm-btn">Confirm Details</button>
+            </div>
+
+            <div class="transaction-fields" id="card" style="display:none;">
+                <div class="instruction">
+                    <p><strong>Limit:</strong> ₹5–10 lakh per transaction (issuer dependent)</p>
+                    <p><strong>Time:</strong> Instant</p>
+                    <p><strong>Platforms:</strong> Visa, Mastercard, RuPay</p>
+                </div>
+                <div class="inputBx"><label>Card Holder Name *</label><input type="text" placeholder="Name On Card"></div>
+                <div class="inputBx"><label>Card Number *</label><input type="text" placeholder="Your Card Number"></div>
+                <div class="row">
+                    <div class="inputBx"><label>Expire Date *</label><input type="text" placeholder="MM/YY"></div>
+                    <div class="inputBx"><label>CCV *</label><input type="text" placeholder="CCV"></div>
+                </div>
+                <button class="confirm-btn">Confirm Details</button>
+            </div>
+
+            <div class="transaction-fields" id="wallet" style="display:none;">
+                <div class="instruction">
+                    <p><strong>Limit:</strong> ₹1,00,000 per month (RBI cap)</p>
+                    <p><strong>Time:</strong> Instant</p>
+                    <p><strong>Platforms:</strong> Paytm Wallet, Amazon Pay, Google Pay, Apple Pay</p>
+                </div>
+                <div class="inputBx"><label>Wallet Provider *</label><input type="text" placeholder="Google Pay, Apple Pay, etc."></div>
+                <div class="inputBx"><label>Wallet ID *</label><input type="text" placeholder="Your Wallet ID"></div>
+                <button class="confirm-btn">Confirm Details</button>
+            </div>
+        </div>
+
+        <!-- Shipping section start -->
+         <div class="shipping">
+            <h2></h2>
+            <div class="row">
+                <div class="inputBx">
+                    <label for="">First Name *</label>
+                    <input type="text" placeholder="Your First Name">
+                </div>
+                <div class="inputBx">
+                    <label for="">Middle Name</label>
+                    <input type="text" placeholder="Your Middle Name">
+                </div>
+                <div class="inputBx">
+                    <label for="">Last Name *</label>
+                    <input type="text" placeholder="Your Last Name">
+                </div>
+            </div>
+            <div class="row">
+                <div class="inputBx">
+                    <label for="">Phone *</label>
+                    <input type="text" placeholder="Your Phone">
+                </div>
+                <div class="inputBx">
+                    <label for="">Email *</label>
+                    <input type="email" placeholder="Your Email">
+                </div>
+            </div>
+            <div class="row">
+                <div class="inputBx">
+                    <label for="">Address 1 *</label>
+                    <input type="text" placeholder="Your Address">
+                </div>
+                <div class="inputBx">
+                    <label for="">Address 2</label>
+                    <input type="text" placeholder="Your Address">
+                </div>
+            </div>
+            <div class="inputBx">
+                <label for="">Additional info</label>
+                <textarea cols="30" rows="5" placeholder="Additional Info"></textarea>
+            </div>
+         </div>
+    </div>
+
+    <!-- footer section start -->
+    <div class="footer">
+        <div class="footer-row">
+            <div class="footer-col">
+                <img src="/Images/logo/S.png" alt="">
+                <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus ab aperiam dolor repellendus quod optio.</p>
+                <span><i class="bx bx-phone"></i>+91 9876543210</span>
+                <span><i class="bx bx-location-plus"></i>Kolkata,West Bengal</span>
+                <span><i class="bx bx-envelope"></i>info@gmail.com</span>
+            </div>
+            <div class="footer-col">
+                <h5>Quick Links</h5>
+                <a href="#"><i class='bx  bx-chevron-right'></i> About Us</a>
+                <a href="#"><i class='bx  bx-chevron-right'></i> Update News</a>
+                <a href="#"><i class='bx  bx-chevron-right'></i> Testimonials</a>
+                <a href="#"><i class='bx  bx-chevron-right'></i> Terms Of Service</a>
+                <a href="#"><i class='bx  bx-chevron-right'></i> Privacy Policy</a>
+                <a href="#"><i class='bx  bx-chevron-right'></i> Our Dealers</a>
+            </div>
+            <div class="footer-col">
+                <h5>Support Center</h5>
+                <a href="#"><i class='bx  bx-chevron-right'></i> FAQ's</a>
+                <a href="#"><i class='bx  bx-chevron-right'></i> Affilitates</a>
+                <a href="#"><i class='bx  bx-chevron-right'></i> Booking Tips</a>
+                <a href="#"><i class='bx  bx-chevron-right'></i> Sell Vericles</a>
+                <a href="#"><i class='bx  bx-chevron-right'></i> Contact Us</a>
+                <a href="#"><i class='bx  bx-chevron-right'></i> Sitmap</a>
+            </div>
+            <div class="footer-col">
+                <h5>Newsletter</h5>
+                <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <input type="text" placeholder="Your Email">
+                <button>Subscribe Now <i class="fa-brands fa-telegram"></i></button>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; Copyright 2026 <span>RS</span> All Right Reserved.</p>
+            <div class="social">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-square-linkedin"></i>
+            </div>
+        </div>
+        
+        <!-- scroll Top button Adding -->
+        <a href="#" class="scrollBtn">
+            <i class='bx  bx-chevrons-up'></i> 
+        </a>
+    </div>
+
+    <!-- swiper js link -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="/js/payment.js"></script>
+</body>
+</html>
