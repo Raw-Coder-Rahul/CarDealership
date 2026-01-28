@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DarkGhost - Car Selling Website</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+    <link href="https://cdn.boxicons.com/3.0.8/fonts/basic/boxicons.min.css" rel="stylesheet">
+    
+    <!-- swiper css link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+</head>
+<body>
+    <!-- top-header -->
+    <div class="top-header">
+        <div class="out-box">
+            <div class="inside-box">
+                <div class="col-1">
+                    <span><i class='bx  bx-envelope'></i> info@gmail.com</span>
+                    <span><i class='bx  bx-phone-ring'></i> +2 123 658 5554</span>
+                    <span><i class='bx  bx-alarm'></i> Mon - Sun (08 AM - 10 PM)</span>
+                </div>
+
+                <div class="col-2">
+                    <a href="#"><i class='bx  bx-arrow-to-right-stroke'></i> Login</a>
+                    <a href="#"><i class='bx  bx-user'></i> Register</a>
+                    <span>Follow Us:</span>
+                    <div class="social">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- navbar section start -->
+    <header class="header">
+        <div class="logo">
+            <img src="/Images/logo/S.png" alt="">
+        </div>
+        <nav>
+            <div class="navbar">
+                    <ul class="navLink">
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="/about.html">About</a></li>
+                        <li><a href="#">Inventory<i class='bx  bx-chevron-down'></i> </a>
+                            <ul class="drop-down">
+                                <li><a href="/inventory_grid.html">Inventory Grid</a></li>
+                                <li><a href="/inventory_list.html">Inventory List</a></li>
+                                <li><a href="/inventory_single.html">Inventory Single</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Pages<i class='bx  bx-chevron-down'></i> </a>
+                            <ul class="drop-down">
+                                <li><a href="/about.html">About</a></li>
+                                <li><a href="#">Car Listing<i class='bx  bx-chevron-down chev'></i> </a>
+                                    <ul class="drop-down-two">
+                                        <li><a href="#">Listing Grid</a></li>
+                                        <li><a href="#">Listing List</a></li>
+                                        <li><a href="#">Listing Single</a></li>
+                                        <li><a href="#">Compare</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Account</a></li>
+                                <li><a href="#">My Account<i class='bx  bx-chevron-down chev'></i> </a>
+                                    <ul class="drop-down-three">
+                                        <li><a href="#">Dashboard</a></li>
+                                        <li><a href="#">My Profile</a></li>
+                                        <li><a href="#">My Listing</a></li>
+                                        <li><a href="#" class="active">Add Listing</a></li>
+                                        <li><a href="#">My Favourites</a></li>
+                                        <li><a href="#">Message</a></li>
+                                        <li><a href="#">Setting</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Authentication<i class='bx  bx-chevron-down chev'></i> </a>
+                                    <ul class="drop-down-four">
+                                        <li><a href="#">Login</a></li>
+                                        <li><a href="#">Register</a></li>
+                                        <li><a href="#">Forgot Password</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Services<i class='bx  bx-chevron-down chev'></i> </a>
+                                    <ul class="drop-down-five">
+                                        <li><a href="#">Services</a></li>
+                                        <li><a href="#">Services Single</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Dealer<i class='bx  bx-chevron-down chev'></i> </a>
+                                    <ul class="drop-down-six">
+                                        <li><a href="#">Dealer</a></li>
+                                        <li><a href="#">Dealer Single</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Extra Pages</a></li>
+                                <li><a href="#">Our Team</a></li>
+                                <li><a href="#">Pricing Plan</a></li>
+                                <li><a href="#">Calculator</a></li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Testimonials</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Shop<i class='bx  bx-chevron-down'></i> </a>
+                            <ul class="drop-down">
+                                <li><a href="#">Shop</a></li>
+                                <li><a href="#">Shop Casting</a></li>
+                                <li><a href="#">Shop Checkout</a></li>
+                                <li><a href="#">Shop Single</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Blog<i class='bx  bx-chevron-down'></i> </a>
+                            <ul class="drop-down">
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Blog Single</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+            </div>
+            <div class="others">
+                <i class='bx  bx-search'></i> 
+                <i class="fa-solid fa-cart-arrow-down cart"></i>
+               <div class="addBtn"><i class='bx  bx-plus-circle'></i> Add Listing</div>
+                <i class='bx  bx-menu-left' id="menuBtn"></i> 
+            </div>
+        </nav>
+    </header>
+
+    <!-- Add Listing Page section start -->
+    <div class="inventory">
+        <h2>Add Listing</h2>
+        <div class="link">
+            <a href="/index.html">Home</a>
+            <span>>>></span>
+            <p>Add Listing</p>
+        </div>
+    </div>
+
+    <!-- Add Listing section start -->
+    <section class="dashboard">
+        <div class="dash-row">
+            <div class="side_one">
+                <div class="profile">
+                    <img src="../Images/dashboard/user.png" alt="">
+                    <h6>Antony Cruse</h6>
+                    <span>antony@example.com</span>
+                    <i class='bx  bx-camera-alt'></i> 
+                </div>
+
+                <div class="box"><a href="#"><i class='bx  bx-alert-octagon'></i> Dashboard</a></div>
+                <div class="box"><a href=""><i class='bx  bx-user'></i> My Profile</a></div>
+                <div class="box"><a href=""><i class='bx  bx-database'></i>  My Listing</a></div>
+                <div class="box activated"><a href="" class="active"><i class='bx  bx-plus-circle'></i> Add Listing</a></div>
+                <div class="box"><a href=""><i class='bx  bx-heart'></i> My Favourites</a></div>
+                <div class="box"><a href=""><i class='bx  bx-message-detail'></i>  Message</a></div>
+                <div class="box"><a href=""><i class='bx  bx-cog'></i> Setting</a></div>
+                <div class="box"><a href=""><i class='bx  bx-arrow-out-left-square-half'></i>  Logout</a></div>
+            </div>
+
+            <div class="side_two">
+                <h5>Add New Listing</h5>
+                <div class="list-header">
+                    <h6>Basic Information</h6>
+                    <label for="#">Listing Title</label>
+                    <input type="text" placeholder="Enter Title">
+                </div>
+
+                <div class="list-row">
+                    <div class="box">
+                        <div class="inputBox">
+                            <label for="#">Condition</label>
+                            <select>
+                                <option value="">Choose</option>
+                                <option value="">Brand New</option>
+                                <option value="">Certified Pre-Owned</option>
+                                <option value="">Luxury Used</option>
+                            </select>
+                        </div>
+                        <div class="inputBox">
+                            <label for="#">Body Type</label>
+                            <select>
+                                <option value="">Choose</option>
+                                <option value="sedan">Sedan</option>
+                                <option value="suv">SUV</option>
+                                <option value="coupe">Coupe</option>
+                                <option value="convertible">Convertible</option>
+                                <option value="supercar">Supercar</option>
+                            </select>
+                        </div>
+                        <div class="inputBox">
+                            <label for="#">Make Brand</label>
+                            <select>
+                                <option value="">Choose</option>
+                                <option value="Bentley">Bentley</option>
+                                <option value="RollsRoyce">Rolls-Royce</option>
+                                <option value="Porsche">Porsche</option>
+                                <option value="Lamborghini">Lamborghini</option>
+                                <option value="Ferrari">Ferrari</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="inputBox">
+                            <label for="#">Drive Type</label>
+                            <select>
+                                <option value="">Choose</option>
+                                <option value="">Automatic</option>
+                                <option value="">Semi Automatic</option>
+                                <option value="">Manual</option>
+                            </select>
+                        </div>
+                        <div class="inputBox">
+                            <label for="#">Engine Size</label>
+                            <input type="text" placeholder="Enter Engine Size">
+                        </div>
+                        <div class="inputBox">
+                            <label for="#">Fuel Type</label>
+                            <select>
+                                <option value="">Choose</option>
+                                <option value="Diesel">Diesel</option>
+                                <option value="Petrol">Petrol</option>
+                                <option value="EV">EV</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="inputBox">
+                            <label for="#">Model</label>
+                            <select>
+                                <option value="">Choose</option>
+                                <option value="">A3</option>
+                                <option value="">A4</option>
+                                <option value="">A5</option>
+                                <option value="">A6</option>
+                                <option value="">A7</option>
+                                <option value="">A8</option>
+                            </select>
+                        </div>
+                        <div class="inputBox">
+                            <label for="#">Price(INR)</label>
+                            <input type="text" placeholder="Enter Price">
+                        </div>
+                        <div class="inputBox">
+                            <label for="#">Year</label>
+                            <select>
+                                <option value="">Choose</option>
+                                <option value="2026">2026</option>
+                                <option value="2025">2025</option>
+                                <option value="2024">2024</option>
+                                <option value="2023">2023</option>
+                                <option value="2022">2022</option>
+                                <option value="2021">2021</option>  
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="inputBox">
+                            <label for="#">Mileage</label>
+                            <select>
+                                <option value="">Choose</option>
+                                <option value="">Automatic</option>
+                                <option value="">Semi Automatic</option>
+                                <option value="">Manual</option>
+                            </select>
+                        </div>
+                        <div class="inputBox">
+                            <label for="#">Transmission</label>
+                            <select>
+                                <option value="">Choose</option>
+                                <option value="">Automatic</option>
+                                <option value="">Manual</option>
+                            </select>
+                        </div>
+                        <div class="inputBox">
+                            <label for="#">Cylinders</label>
+                            <select>
+                                <option value="">Choose</option>
+                                <option value="4">4</option>
+                                <option value="8">8</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="inputBox">
+                            <label for="#">Color</label>
+                            <select>
+                                <option value="">Choose</option>
+                                <option value="">Red</option>
+                                <option value="">White</option>
+                                <option value="">Black</option>
+                            </select>
+                        </div>
+                        <div class="inputBox">
+                            <label for="#">Doors</label>
+                            <select>
+                                <option value="">Choose</option>
+                                <option value="">2</option>
+                                <option value="">4</option>
+                            </select>
+                        </div>
+                        <div class="inputBox">
+                            <label for="#">VIN</label>
+                            <input type="text" placeholder="VIN Number">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tags">
+                    <label for="#">Tags or keyword</label>
+                    <input type="text" placeholder="Enter Tags">
+                </div>
+
+                <h6>Location</h6>
+                <div class="location">
+                    <div class="box">
+                        <div class="inputBox">
+                            <label for="">Address</label>
+                            <input type="text" placeholder="Enter Address">
+                        </div>
+                        <div class="inputBox">
+                            <label for="">City</label>
+                            <input type="text" placeholder="Enter City">
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="inputBox">
+                            <label for="">State</label>
+                            <input type="text" placeholder="Enter State">
+                        </div>
+                        <div class="inputBox">
+                            <label for="">Pin Code or Zip Code</label>
+                            <input type="number" placeholder="Enter Pin Code or Zip Code">
+                        </div>
+                    </div>
+                </div>
+
+                <h6>Detailed Information</h6>
+
+                <div class="inputBox">
+                    <label for="#">Description</label>
+                    <textarea cols="30" rows="5" placeholder="Write Description"></textarea>
+                </div>
+
+                <h6>Features</h6>
+                <div class="feature">
+                    <div class="checkBox">
+                        <input type="checkbox"> Multi-zone A/C 
+                    </div>
+                    <div class="checkBox">
+                        <input type="checkbox"> Adaptive Curise Control 
+                    </div>
+                    <div class="checkBox">
+                        <input type="checkbox"> Sunroof
+                    </div>
+                </div>
+                <div class="feature">
+                    <div class="checkBox">
+                        <input type="checkbox"> Heated front seats
+                    </div>
+                    <div class="checkBox">
+                        <input type="checkbox"> Cooled Seats
+                    </div>
+                    <div class="checkBox">
+                        <input type="checkbox"> Panoramic roof
+                    </div>
+                </div>
+                <div class="feature">
+                    <div class="checkBox">
+                        <input type="checkbox"> Navigation System
+                    </div>
+                    <div class="checkBox">
+                        <input type="checkbox"> Keyles Start
+                    </div>
+                    <div class="checkBox">
+                        <input type="checkbox"> Bluetooth
+                    </div>
+                </div>
+
+                <h6>Contact Information</h6>
+
+                <div class="info">
+                    <div class="box">
+                        <div class="inputBox">
+                            <label for="#">Name</label>
+                            <input type="text" placeholder="Enter Name">
+                        </div>
+                        <div class="inputBox">
+                            <label for="">Email</label>
+                            <input type="email" placeholder="Enter Email">
+                        </div>
+                        <div class="inputBox">
+                            <label for="">Phone No.</label>
+                            <input type="number">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="condition">
+                    <input type="checkbox">I agree with your<a href="#">Terms of Services</a>&<a href="#">Privacy Policy</a>.
+                </div>
+
+                <div class="button">
+                    <a href="#">Save & Publically Listing</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer section start -->
+    <div class="footer">
+        <div class="footer-row">
+            <div class="footer-col">
+                <img src="/Images/logo/S.png" alt="">
+                <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus ab aperiam dolor repellendus quod optio.</p>
+                <span><i class="bx bx-phone"></i>+91 9876543210</span>
+                <span><i class="bx bx-location-plus"></i>Kolkata,West Bengal</span>
+                <span><i class="bx bx-envelope"></i>info@gmail.com</span>
+            </div>
+            <div class="footer-col">
+                <h5>Quick Links</h5>
+                <a href="#"><i class='bx  bx-chevron-right'></i> About Us</a>
+                <a href="#"><i class='bx  bx-chevron-right'></i> Update News</a>
+                <a href="#"><i class='bx  bx-chevron-right'></i> Testimonials</a>
+                <a href="#"><i class='bx  bx-chevron-right'></i> Terms Of Service</a>
+                <a href="#"><i class='bx  bx-chevron-right'></i> Privacy Policy</a>
+                <a href="#"><i class='bx  bx-chevron-right'></i> Our Dealers</a>
+            </div>
+            <div class="footer-col">
+                <h5>Support Center</h5>
+                <a href="#"><i class='bx  bx-chevron-right'></i> FAQ's</a>
+                <a href="#"><i class='bx  bx-chevron-right'></i> Affilitates</a>
+                <a href="#"><i class='bx  bx-chevron-right'></i> Booking Tips</a>
+                <a href="#"><i class='bx  bx-chevron-right'></i> Sell Vericles</a>
+                <a href="#"><i class='bx  bx-chevron-right'></i> Contact Us</a>
+                <a href="#"><i class='bx  bx-chevron-right'></i> Sitmap</a>
+            </div>
+            <div class="footer-col">
+                <h5>Newsletter</h5>
+                <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <input type="text" placeholder="Your Email">
+                <button>Subscribe Now <i class="fa-brands fa-telegram"></i></button>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; Copyright 2026 <span>RS</span> All Right Reserved.</p>
+            <div class="social">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-square-linkedin"></i>
+            </div>
+        </div>
+        
+        <!-- scroll Top button Adding -->
+        <a href="#" class="scrollBtn">
+            <i class='bx  bx-chevrons-up'></i> 
+        </a>
+    </div>
+
+    <!-- swiper js link -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory List - RS</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+    <link href="https://cdn.boxicons.com/3.0.8/fonts/basic/boxicons.min.css" rel="stylesheet">
+    
+    <!-- swiper css link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+</head>
+<body>
+    <!-- top-header -->
+    <div class="top-header">
+        <div class="out-box">
+            <div class="inside-box">
+                <div class="col-1">
+                    <span><i class='bx  bx-envelope'></i> info@gmail.com</span>
+                    <span><i class='bx  bx-phone-ring'></i> +2 123 658 5554</span>
+                    <span><i class='bx  bx-alarm'></i> Mon - Sun (08 AM - 10 PM)</span>
+                </div>
+
+                <div class="col-2">
+                    <a href="#"><i class='bx  bx-arrow-to-right-stroke'></i> Login</a>
+                    <a href="#"><i class='bx  bx-user'></i> Register</a>
+                    <span>Follow Us:</span>
+                    <div class="social">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- navbar section start -->
+    <header class="header">
+        <div class="logo">
+            <img src="./Images/logo/S.png" alt="">
+        </div>
+        <nav>
+            <div class="navbar">
+                    <ul class="navLink">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./about.html">About</a></li>
+                        <li><a href="#">Inventory<i class='bx  bx-chevron-down'></i> </a>
+                            <ul class="drop-down">
+                                <li><a href="./inventory_grid.html">Inventory Grid</a></li>
+                                <li><a href="./inventory_list.html" class="active">Inventory List</a></li>
+                                <li><a href="./inventory_single.html">Inventory Single</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Pages<i class='bx  bx-chevron-down'></i> </a>
+                            <ul class="drop-down">
+                                <li><a href="./about.html">About</a></li>
+                                <li><a href="#">Car Listing<i class='bx  bx-chevron-down chev'></i> </a>
+                                    <ul class="drop-down-two">
+                                        <li><a href="#">Listing Grid</a></li>
+                                        <li><a href="#">Listing List</a></li>
+                                        <li><a href="#">Listing Single</a></li>
+                                        <li><a href="#">Compare</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Account</a></li>
+                                <li><a href="#">My Account<i class='bx  bx-chevron-down chev'></i> </a>
+                                    <ul class="drop-down-three">
+                                        <li><a href="/account/dashboard.html">Dashboard</a></li>
+                                        <li><a href="/account/profile.html">My Profile</a></li>
+                                        <li><a href="/account/listing.html">My Listing</a></li>
+                                        <li><a href="/account/addListing.html">Add Listing</a></li>
+                                        <li><a href="#">My Favourites</a></li>
+                                        <li><a href="#">Message</a></li>
+                                        <li><a href="#">Setting</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Authentication<i class='bx  bx-chevron-down chev'></i> </a>
+                                    <ul class="drop-down-four">
+                                        <li><a href="#">Login</a></li>
+                                        <li><a href="#">Register</a></li>
+                                        <li><a href="#">Forgot Password</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Services<i class='bx  bx-chevron-down chev'></i> </a>
+                                    <ul class="drop-down-five">
+                                        <li><a href="#">Services</a></li>
+                                        <li><a href="#">Services Single</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Dealer<i class='bx  bx-chevron-down chev'></i> </a>
+                                    <ul class="drop-down-six">
+                                        <li><a href="#">Dealer</a></li>
+                                        <li><a href="#">Dealer Single</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Extra Pages</a></li>
+                                <li><a href="#">Our Team</a></li>
+                                <li><a href="#">Pricing Plan</a></li>
+                                <li><a href="#">Calculator</a></li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Testimonials</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Shop<i class='bx  bx-chevron-down'></i> </a>
+                            <ul class="drop-down">
+                                <li><a href="/shop/shop.html">Shop</a></li>
+                                <li><a href="/shop/shop_cart.html">Shop Cart</a></li>
+                                <li><a href="/shop/shop_checkout.html">Shop Checkout</a></li>
+                                <li><a href="/shop/shop_single.html">Shop Single</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Blog<i class='bx  bx-chevron-down'></i> </a>
+                            <ul class="drop-down">
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Blog Single</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+            </div>
+            <div class="others">
+                <i class='bx  bx-search'></i> 
+                <i class="fa-solid fa-cart-arrow-down cart"></i>
+               <div class="addBtn"><i class='bx  bx-plus-circle'></i> Add Listing</div>
+                <i class='bx  bx-menu-left' id="menuBtn"></i> 
+            </div>
+        </nav>
+    </header>
+
+    <!-- Inventory grid section start -->
+    <section class="inventory">
+        <h2>Inventory List</h2>
+        <div class="link">
+            <a href="./index.html">Home</a>
+            <span>>>></span>
+            <p>Inventory List</p>
+        </div>
+    </section>
+
+    <!-- show arrivals section start -->
+    <section class="arrivals show">
+        <div class="col-1">
+            <div class="show-col">
+                <h5>Search</h5>
+                <div class="searchBox">
+                    <input class="searchbar" type="text" placeholder="Search">
+                    <i class='bx  bx-search'></i> 
+                </div>
+            </div>
+
+            <div class="show-col">
+                <h5>Brands</h5>
+                <div class="checkBox">
+                    <input type="checkbox">All Brands <br>
+                    <input type="checkbox">Bentley <br>
+                    <input type="checkbox">Rolls-Royce <br>
+                    <input type="checkbox">Porsche <br>
+                    <input type="checkbox">Lamborghini <br>
+                    <input type="checkbox">Ferrari <br>
+                </div>
+            </div>
+
+            <div class="show-col">
+                <h5>Transmission</h5>
+                <div class="checkBox">
+                    <input type="checkbox">Automatic <br>
+                    <input type="checkbox">Manual <br>
+                </div>
+            </div>
+
+            <div class="show-col">
+                <h5>Fuel Type</h5>
+                <div class="checkBox">
+                    <input type="checkbox">Gas <br>
+                    <input type="checkbox">Hybrid <br>
+                    <input type="checkbox">Diesel <br>
+                    <input type="checkbox">Electric <br>
+                </div>
+            </div>
+
+            <div class="show-col">
+                <h5>Features</h5>
+                <div class="checkBox">
+                    <input type="checkbox">Airbag-Driver <br>
+                    <input type="checkbox">Airbag-Passenger <br>
+                    <input type="checkbox">Alloy Wheels <br>
+                    <input type="checkbox">Anti-lock Branking System <br>
+                </div>
+            </div>
+        </div>
+        <div class="col-2">
+            <div class="head">
+                <span>Showing 1-10 of 50 Results</span>
+                <div class="others">
+                    <i class='bx  bx-grid grid'></i> 
+                    <i class='bx  bx-menu'></i> 
+                </div>
+                <select>
+                    <option value="">Sort By Default</option>
+                    <option value="">Sort By Featured</option>
+                    <option value="">Sort By Latest</option>
+                    <option value="">Sort By Low Price</option>
+                    <option value="">Sort By High Price</option>
+                </select>
+            </div>
+            <div class="arr-row row inventory_list">
+                <div class="arr-col">
+                    <div class="image">
+                        <img src="./Images/Cars/prosche-electric-car-01.webp" alt="Porsche Taycan">
+                    </div>
+
+                    <div class="list">
+                        <h5>Porsche Taycan</h5>
+                        <div class="rating">
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half"></i>
+                            </div>
+                            <div class="review">
+                                <span>5.0 (5.8k Review)</span>
+                            </div>
+                        </div>
+                        <div class="features">
+                            <span><i class='bx  bx-alert-circle'></i> Automatic</span>
+                            <span><i class='bx  bx-tag-alt'></i> Range ~500 km</span>
+                            <span><i class='bx bx-car'></i> Model 2025</span>
+                            <span><i class='bx  bx-target'></i> 93.4 kWh Battery</span>
+                        </div>
+                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, ullam voluptatem! Aspernatur asperiores magnam voluptate!</p>
+                        <div class="price">
+                            <p>₹2 Cr</p>
+                            <button>Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="arr-col">
+                    <div class="image">
+                        <img src="./Images/Cars/bentley_Continental_gt_sedan.jpg" alt="Bentley Continental">
+                    </div>
+
+                    <div class="list">
+                        <h5>Bentley Continental GT Sedan</h5>
+                        <div class="rating">
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half"></i>
+                            </div>
+                            <div class="review">
+                                <span>4.8 (3.2k Review)</span>
+                            </div>
+                        </div>
+                        <div class="features">
+                            <span><i class='bx  bx-alert-circle'></i> Automatic</span>
+                            <span><i class='bx  bx-tag-alt'></i> Mileage ~9 km/l</span>
+                            <span><i class='bx bx-car'></i> Model 2025</span>
+                            <span><i class='bx  bx-target'></i>100 kWh Battery</span>
+                        </div>
+                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, ullam voluptatem! Aspernatur asperiores magnam voluptate!</p>
+                        <div class="price">
+                            <p>₹3 Cr</p>
+                            <button>Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="arr-col">
+                    <div class="image">
+                        <img src="./Images/Cars/2026-rolls-royce-phantom-pr-123-690cd211484fb.avif" alt="Rolls-Royce Phantom">
+                    </div>
+
+                    <div class="list">
+                        <h5>Rolls-Royce Phantom</h5>
+                        <div class="rating">
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half"></i>
+                            </div>
+                            <div class="review">
+                                <span>4.9 (4.5k Review)</span>
+                            </div>
+                        </div>
+                        <div class="features">
+                            <span><i class='bx  bx-alert-circle'></i> Automatic</span>
+                            <span><i class='bx  bx-tag-alt'></i> Mileage ~10km/l</span>
+                            <span><i class='bx bx-car'></i> Model 2026</span>
+                            <span><i class='bx  bx-target'></i> 563-hp twin-turbocharged 6.7-liter V-12 Petrol Engine</span>
+                        </div>
+                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, ullam voluptatem! Aspernatur asperiores magnam voluptate!</p>
+                        <div class="price">
+                            <p>₹5 Cr+</p>
+                            <button>Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="arr-col">
+                    <div class="image">
+                     <img src="./Images/Cars/2024-porsche-911-turbo-102-67360755ca94f.avif" alt="">
+                    </div>
+
+                    <div class="list">
+                        <h5>Porsche 911</h5>
+                        <div class="rating">
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half"></i>
+                            </div>
+                            <div class="review">
+                                <span>4.7 (6.1k Review)</span>
+                            </div>
+                        </div>
+                        <div class="features">
+                            <span><i class='bx  bx-alert-circle'></i> Automatic</span>
+                            <span><i class='bx  bx-tag-alt'></i> Mileage ~8km/l</span>
+                            <span><i class='bx bx-car'></i> Model 2024</span>
+                            <span><i class='bx  bx-target'></i> Twin-Turbo Flat-6 Engine</span>
+                        </div>
+                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, ullam voluptatem! Aspernatur asperiores magnam voluptate!</p>
+                        <div class="price">
+                            <p>₹1.8 Cr</p>
+                            <button>Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="arr-col">
+                    <div class="image">
+                        <img src="./Images/Cars/2025-lamborghini-urus-se-phev-124-6700549b89f65.avif" alt="">
+                    </div>
+
+                    <div class="list">
+                        <h5>Lamborghini Urus</h5>
+                        <div class="rating">
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half"></i>
+                            </div>
+                            <div class="review">
+                                <span>4.8 (7.2k Review)</span>
+                            </div>
+                        </div>
+                        <div class="features">
+                            <span><i class='bx  bx-alert-circle'></i> Automatic</span>
+                            <span><i class='bx  bx-tag-alt'></i> Mileage ~6 km/l</span>
+                            <span><i class='bx bx-car'></i> Model 2026</span>
+                            <span><i class='bx  bx-target'></i> 4.0L V8 Twin-Turbo</span>
+                        </div>
+                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, ullam voluptatem! Aspernatur asperiores magnam voluptate!</p>
+                        <div class="price">
+                            <p>₹3.2 Cr</p>
+                            <button>Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="arr-col">
+                    <div class="image">
+                        <img src="./Images/Cars/ferrari-roma-spider-2-64137a910bf1c.avif" alt="Ferrari Roma">
+                    </div>
+
+                    <div class="list">
+                        <h5>Ferrari Roma</h5>
+                        <div class="rating">
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half"></i>
+                            </div>
+                            <div class="review">
+                                <span>4.9 (2.9k Review)</span>
+                            </div>
+                        </div>
+                        <div class="features">
+                            <span><i class='bx  bx-alert-circle'></i> Automatic</span>
+                            <span><i class='bx  bx-tag-alt'></i> Mileage ~7 km/l</span>
+                            <span><i class='bx bx-car'></i> Model 2024</span>
+                            <span><i class='bx  bx-target'></i> 3.9L V8 Turbo</span>
+                        </div>
+                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, ullam voluptatem! Aspernatur asperiores magnam voluptate!</p>
+                        <div class="price">
+                            <p>₹3 Cr</p>
+                            <button>Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="arr-col">
+                    <div class="image">
+                      <img src="./Images/Cars/2023-bentley-continental-gt-s-coupe-101-1654526518.avif" alt="">
+                    </div>
+
+                    <div class="list">
+                        <h5>Bentley Continental GT Coupe</h5>
+                        <div class="rating">
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half"></i>
+                            </div>
+                            <div class="review">
+                                <span>4.7 (2.5k Review)</span>
+                            </div>
+                        </div>
+                        <div class="features">
+                            <span><i class='bx  bx-alert-circle'></i> Automatic</span>
+                            <span><i class='bx  bx-tag-alt'></i> Mileage ~9 km/l</span>
+                            <span><i class='bx bx-car'></i> Model 2023</span>
+                            <span><i class='bx  bx-target'></i> W12 Petrol Engine</span>
+                        </div>
+                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, ullam voluptatem! Aspernatur asperiores magnam voluptate!</p>
+                        <div class="price">
+                            <p>₹3 Cr</p>
+                            <button>Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="arr-col">
+                    <div class="image">
+                        <img src="./Images/Cars/2025-rolls-royce-cullinan-series-2-pr-103-68d449e619fde.avif" alt="">
+                    </div>
+
+                    <div class="list">
+                        <h5>Rolls-Royce Cullinan</h5>
+                        <div class="rating">
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half"></i>
+                            </div>
+                            <div class="review">
+                                <span>4.9 (3.8k Review)</span>
+                            </div>
+                        </div>
+                        <div class="features">
+                            <span><i class='bx  bx-alert-circle'></i> Automatic</span>
+                            <span><i class='bx  bx-tag-alt'></i> Mileage ~8 km/l</span>
+                            <span><i class='bx bx-car'></i> Model 2025</span>
+                            <span><i class='bx  bx-target'></i> V12 Petrol Engine</span>
+                        </div>
+                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, ullam voluptatem! Aspernatur asperiores magnam voluptate!</p>
+                        <div class="price">
+                            <p>₹6 Cr</p>
+                            <button>Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="arr-col">
+                    <div class="image">
+                        <img src="./Images/Cars/2022-lamborghini-aventador-109-1625607587.avif" alt="">
+                    </div>
+
+                    <div class="list">
+                        <h5>Lamborghini Aventador</h5>
+                        <div class="rating">
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half"></i>
+                            </div>
+                            <div class="review">
+                                <span>4.8 (5.1k Review)</span>
+                            </div>
+                        </div>
+                        <div class="features">
+                            <span><i class='bx  bx-alert-circle'></i> Automatic</span>
+                            <span><i class='bx  bx-tag-alt'></i> Mileage ~5 km/l</span>
+                            <span><i class='bx bx-car'></i> Model 2022</span>
+                            <span><i class='bx  bx-target'></i> 6.5L V12 Engine</span>
+                        </div>
+                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, ullam voluptatem! Aspernatur asperiores magnam voluptate!</p>
+                        <div class="price">
+                            <p>₹5 Cr</p>
+                            <button>Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="arr-col">
+                    <div class="image">
+                        <img src="./Images/Cars/2024-ferrari-sf90-xx-stradale-109-654a668fc71a3.avif" alt="">
+                    </div>
+
+                    <div class="list">
+                        <h5>Rolls-Royce Cullinan</h5>
+                        <div class="rating">
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half"></i>
+                            </div>
+                            <div class="review">
+                                <span>5.0 (4.2k Review)</span>
+                            </div>
+                        </div>
+                        <div class="features">
+                            <span><i class='bx  bx-alert-circle'></i> Automatic</span>
+                            <span><i class='bx  bx-tag-alt'></i> Mileage ~7 km/l</span>
+                            <span><i class='bx bx-car'></i> Model 2025</span>
+                            <span><i class='bx  bx-target'></i> Hybrid V8 + Electric</span>
+                        </div>
+                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, ullam voluptatem! Aspernatur asperiores magnam voluptate!</p>
+                        <div class="price">
+                            <p>₹5 Cr+</p>
+                            <button>Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="number">
+                <span class="black"><i class='bx  bx-arrow-left'></i></span>
+                <span>1</span>
+                <span class="black">2</span>
+                <span class="black">3</span>
+                <span class="black"><i class='bx  bx-arrow-right'></i></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer section start -->
+    <div class="footer">
+        <div class="footer-row">
+            <div class="footer-col">
+                <img src="./Images/logo/S.png" alt="">
+                <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus ab aperiam dolor repellendus quod optio.</p>
+                <span><i class="bx bx-phone"></i>+91 9876543210</span>
+                <span><i class="bx bx-location-plus"></i>Kolkata,West Bengal</span>
+                <span><i class="bx bx-envelope"></i>info@gmail.com</span>
+            </div>
+            <div class="footer-col">
+                <h5>Quick Links</h5>
+                <a href="#"><i class='bx  bx-chevron-right'></i> About Us</a>
+                <a href="#"><i class='bx  bx-chevron-right'></i> Update News</a>
+                <a href="#"><i class='bx  bx-chevron-right'></i> Testimonials</a>
+                <a href="#"><i class='bx  bx-chevron-right'></i> Terms Of Service</a>
+                <a href="#"><i class='bx  bx-chevron-right'></i> Privacy Policy</a>
+                <a href="#"><i class='bx  bx-chevron-right'></i> Our Dealers</a>
+            </div>
+            <div class="footer-col">
+                <h5>Support Center</h5>
+                <a href="#"><i class='bx  bx-chevron-right'></i> FAQ's</a>
+                <a href="#"><i class='bx  bx-chevron-right'></i> Affilitates</a>
+                <a href="#"><i class='bx  bx-chevron-right'></i> Booking Tips</a>
+                <a href="#"><i class='bx  bx-chevron-right'></i> Sell Vericles</a>
+                <a href="#"><i class='bx  bx-chevron-right'></i> Contact Us</a>
+                <a href="#"><i class='bx  bx-chevron-right'></i> Sitmap</a>
+            </div>
+            <div class="footer-col">
+                <h5>Newsletter</h5>
+                <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <input type="text" placeholder="Your Email">
+                <button>Subscribe Now <i class="fa-brands fa-telegram"></i></button>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; Copyright 2026 <span>RS</span> All Right Reserved.</p>
+            <div class="social">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-square-linkedin"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- swiper js link -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
