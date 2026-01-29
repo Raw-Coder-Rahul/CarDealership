@@ -4283,6 +4283,407 @@ section h1 span {
 }
 
 
+/* Signup from section start */
+.signup {
+    padding: 4rem 3.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.signup .title h3 {
+    font-size: 34px;
+    color: #3a3737;
+    font-weight: 550;
+    padding-bottom: 30px;
+    text-align: center;
+    position: relative;
+}
+
+.signup .title h3::before {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 4px;
+    background: var(--main-color);
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    animation: animate 8s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        width: 0px;
+    }
+}
+
+.signup form {
+    width: 70%;
+    margin: 40px auto;
+}
+
+.signup form .inputs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.signup form .inputs .inputBx {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.signup form .inputs .inputBx input {
+    width: 100%;
+    padding: 12px 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    font-size: 16px;
+    border-radius: 3px;
+}
+
+.signup form .inputs .inputBx input:focus {
+    border: 1px solid var(--main-color);
+    box-shadow: none;
+}
+
+.signup form .inputs .inputBx label {
+    font-size: 17px;
+    color: #3a3737;
+}
+
+.signup form.checkBx {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 30px;
+    font-size: 16px;
+    color: #3a3737;
+}
+
+.signup form .submit {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.signup form .submit button {
+    margin: 60px 0 10px;
+    width: 250px;
+    height: 50px;
+    background: var(--text-color);
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.signup form .submit button:hover {
+    background: var(--main-color);
+}
+
+.social_log {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.social_log p {
+    padding-bottom: 20px;
+    font-size: 16px;
+    color: #646161;
+}
+
+.social_log .social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.social_log .social i {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    color: var(--main-color);    
+    background: transparent;
+    padding: 7px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.5s ease;
+    margin-right: 8px;
+}
+
+.social_log .social i:hover {
+    background: var(--text-color);
+    color: #fff;
+    transform: scale(1.3);
+}
+
+@media(max-width:768px){
+    .signup form .inputs {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media(max-width:450px){
+    .signup .title h3 {
+        font-size: 24px;
+    }
+}
+
+
+/* Login from section start */
+.login {
+    padding: 4rem 3.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login .title h3 {
+    font-size: 34px;
+    color: #3a3737;
+    font-weight: 550;
+    padding-bottom: 30px;
+    text-align: center;
+    position: relative;
+}
+
+.login .title h3::before {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 4px;
+    background: var(--main-color);
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    animation: animate 6s linear infinite;
+}
+
+.login form {
+    width: 700px;
+    box-shadow: 0 0 5px #d8d3d3;
+    margin-top: 40px;
+    padding: 30px 12px;
+    border-radius: 10px;
+}
+
+.login form .inputs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: left;
+    gap: 20px;
+}
+
+.login form .inputs .inputBx {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.login form .inputs .inputBx input {
+    width: 100%;
+    padding: 12px 5px;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+.login form .inputs .inputBx .label {
+    font-size: 17px;
+    color: #3a3737;
+}
+
+.login form .forgot {
+    display: flex;
+    gap: 10px;
+    font-size: 16px;
+    color: #3a3737;
+    margin: 30px 0;
+}
+
+.login form .forgot a {
+    font-size: 16px;
+    color: #3a3737;
+}
+
+.login form .forgot a:hover {
+    color: #6259ca;
+    text-decoration: underline;
+}
+
+.login form .submit {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.login form .submit button {
+    margin: 0 0 10px;
+    width: 250px;
+    height: 50px;
+    background: var(--text-color);
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.login form .submit button:hover {
+    background: var(--main-color);
+}
+
+@media(max-width:768px) {
+    .login form .inputs {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .login form {
+        width: 100%;
+    }
+}
+
+@media(max-width:450px) {
+    .login .title h3 {
+        font-size: 24px;
+    }
+}
+
+
+/* Forgot section start */
+.forgot {
+    padding: 4rem 3.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.forgot h2 {
+    font-size: 34px;
+    color: #3a3737;
+    font-weight: 500;
+    padding-bottom: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.forgot p {
+    font-size: 14px;
+    color: #3a3737;
+    text-align: center;
+    letter-spacing: 0.8px;
+    padding-bottom: 40px;
+}
+
+.forgot .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-bottom: 30px;
+}
+
+.forgot .btn a {
+    box-shadow: 0 0 4px #ffd700;
+    padding: 8px 23px;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.forgot .btn a:hover {
+    box-shadow: 0 0 4px #cf397f;
+    background: #cab1b8;
+    color: #fff;
+}
+
+.forgot .inputBx {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-bottom: 40px;
+}
+
+.forgot .inputBx label {
+    font-size: 18px;
+    color: #3a3737;
+    padding-bottom: 10px;
+}
+
+.forgot .inputBx input {
+    position: relative;
+    /* box-shadow: 0 0 5px #3a3737; */
+    width: 300px;
+    height: 40px;
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.forgot .inputBx input:focus {
+    border: 1px solid var(--main-color);
+}
+
+.forgot .inputBx i {
+    position: absolute;
+    right: 5px;
+    bottom: 10px;
+    font-size: 18px;
+    color: #3a3737;
+}
+
+.forgot button {
+    background: #141622;
+    color: #fff;
+    padding: 10px 14px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.forgot button:hover {
+    background: var(--main-color);
+    color: #fff;
+}
+
+@media(max-width:450px) {
+    .forgot h2 {
+        font-size: 24px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* Royal Dark Mode */
